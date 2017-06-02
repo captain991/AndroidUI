@@ -33,7 +33,6 @@ public class RoundImageView extends View {
     public RoundImageView(Context context) {
         super(context);
         init();
-        int i=0;
     }
 
     public RoundImageView(Context context, AttributeSet attrs) {
