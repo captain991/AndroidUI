@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.captain.customview.MainActivity">
+
+    <!--<com.example.captain.customview.widget.MinionsView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--tools:layout_editor_absoluteX="8dp"-->
+    <!--tools:layout_editor_absoluteY="8dp" />-->
+
+
+    <!--<com.example.captain.customview.widget.GradientTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="测试一下是不是真的有渐变效果"-->
+    <!--android:textColor="#888888"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--<com.example.captain.customview.widget.XfermodeView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.example.captain.customview.widget.RoundImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<com.example.captain.customview.widget.ReflectionView-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="300dp" />-->
+
+    <!--<com.example.captain.customview.widget.FilterView-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="300dp" />-->
+
+    <!--<com.example.captain.customview.widget.RippleView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+
+    <!--<com.skyfishjy.library.RippleBackground-->
+    <!--android:id="@+id/ripple"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:rb_color="#27a2f2"-->
+    <!--app:rb_duration="3000"-->
+    <!--app:rb_radius="90dp"-->
+    <!--app:rb_rippleAmount="6"-->
+    <!--app:rb_scale="3" />-->
+
+
+    <!--<com.example.captain.customview.widget.RippleLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+</LinearLayout>
