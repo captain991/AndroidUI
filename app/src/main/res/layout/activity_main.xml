@@ -25,9 +25,9 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
 
-    <com.example.captain.customview.widget.RoundImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <!--<com.example.captain.customview.widget.RoundImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
 
     <!--<com.example.captain.customview.widget.ReflectionView-->
     <!--android:layout_width="300dp"-->
@@ -56,4 +56,8 @@
     <!--<com.example.captain.customview.widget.RippleLayout-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
+
+    <com.example.captain.customview.widget.Magnifier
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 </LinearLayout>
