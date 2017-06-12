@@ -10,13 +10,12 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Shader;
 import android.util.AttributeSet;
-import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 
 import com.example.captain.customview.R;
-import com.example.captain.customview.util.BitmapUtil;
 
 /**
  * Created by captain on 2017/6/2.
@@ -46,7 +45,7 @@ public class Magnifier extends View {
 
     public void init() {
         BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inSampleSize = 2;
+        options.inSampleSize = 1;
         mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.moon, options);
         mPaint.setColor(Color.RED);
     }

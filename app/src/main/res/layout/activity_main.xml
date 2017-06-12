@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#555"
     tools:context="com.example.captain.customview.MainActivity">
 
     <!--<com.example.captain.customview.widget.MinionsView-->
@@ -12,14 +13,6 @@
     <!--android:layout_height="wrap_content"-->
     <!--tools:layout_editor_absoluteX="8dp"-->
     <!--tools:layout_editor_absoluteY="8dp" />-->
-
-
-    <!--<com.example.captain.customview.widget.GradientTextView-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:text="测试一下是不是真的有渐变效果"-->
-    <!--android:textColor="#888888"-->
-    <!--android:textSize="20sp" />-->
 
     <!--<com.example.captain.customview.widget.XfermodeView-->
     <!--android:layout_width="match_parent"-->
@@ -30,8 +23,8 @@
     <!--android:layout_height="match_parent" />-->
 
     <!--<com.example.captain.customview.widget.ReflectionView-->
-    <!--android:layout_width="300dp"-->
-    <!--android:layout_height="300dp" />-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
 
     <!--<com.example.captain.customview.widget.FilterView-->
     <!--android:layout_width="300dp"-->
@@ -57,7 +50,33 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
 
-    <com.example.captain.customview.widget.Magnifier
+    <!--<com.example.captain.customview.widget.Magnifier-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--<com.example.captain.customview.widget.LinearGradientTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="测试一下酷炫狂拽吊炸天的效果"-->
+    <!--android:textSize="18sp"/>-->
+
+    <!--<com.example.captain.customview.widget.PathTestView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.example.captain.customview.widget.DragBubbleView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnBubbleReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="reset" />
+
+    <!--<com.example.captain.customview.widget.WaveView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
 </LinearLayout>
