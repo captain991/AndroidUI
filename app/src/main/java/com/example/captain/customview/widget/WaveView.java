@@ -43,6 +43,7 @@ public class WaveView extends View implements View.OnClickListener {
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setAntiAlias(true);
         this.setOnClickListener(this);
+        setLayerType(LAYER_TYPE_HARDWARE, null);
     }
 
     @Override
@@ -50,11 +51,9 @@ public class WaveView extends View implements View.OnClickListener {
         super.onDraw(canvas);
         mWavePath.reset();
         mWavePath.moveTo(-waveLength + offset, centerY);
-        for (int i = 0; i < 3; i++) {
-            mWavePath.quadTo(-waveLength * 3 / 4 + offset + i * waveLength, centerY + 60,
-                    -waveLength / 2 + offset + i * waveLength, centerY);
-            mWavePath.quadTo(-waveLength / 4 + offset + i * waveLength, centerY - 60,
-                    offset + i * waveLength, centerY);
+        for (int i = -waveLength; i < getWidth(); i = i + waveLength) {
+            mWavePath.rQuadTo(waveLength / 4, 60, waveLength / 2, 0);
+            mWavePath.rQuadTo(waveLength / 4, -60, waveLength / 2, 0);
         }
         mWavePath.lineTo(getWidth(), getHeight());
         mWavePath.lineTo(0, getHeight());
@@ -67,7 +66,7 @@ public class WaveView extends View implements View.OnClickListener {
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         waveLength = w / 2;
-        centerY = h;
+        centerY = h ;
     }
 
     @Override

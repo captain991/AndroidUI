@@ -5,8 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#555"
     tools:context="com.example.captain.customview.MainActivity">
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/recyclerView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
 
     <!--<com.example.captain.customview.widget.MinionsView-->
     <!--android:layout_width="wrap_content"-->
@@ -64,19 +68,23 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
 
-    <com.example.captain.customview.widget.DragBubbleView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+    <!--<com.example.captain.customview.widget.DragBubbleView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1" />-->
 
-    <Button
-        android:id="@+id/btnBubbleReset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="reset" />
+    <!--<Button-->
+    <!--android:id="@+id/btnBubbleReset"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:text="reset" />-->
 
     <!--<com.example.captain.customview.widget.WaveView-->
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
+
+    <com.example.captain.customview.widget.VolumeWaveView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

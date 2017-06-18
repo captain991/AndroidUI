@@ -36,7 +36,7 @@ public class DragBubbleView extends View {
 
     private int mBubbleState;
     //静止的点半径
-    private int initRadius = 60;
+    private int initRadius = 40;
     private int mStillRadius;
 
     //移动的点的半径
@@ -91,7 +91,7 @@ public class DragBubbleView extends View {
         mBezierPaint.setColor(Color.RED);
 
         mTextPaint.setColor(Color.WHITE);
-        mTextPaint.setTextSize(50);
+        mTextPaint.setTextSize(20);
         mTextPaint.setTextAlign(Paint.Align.CENTER);
 
         mBurstBitmap = new Bitmap[mBurstDrawablesArray.length];
